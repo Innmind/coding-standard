@@ -17,7 +17,7 @@ Create a file `.php_cs.dist` at the root of the repository with the following co
 ```php
 <?php
 
-return \Innmind\CodingStandard\CodingStandard::config();
+return \Innmind\CodingStandard\CodingStandard::config(['src', 'tests']);
 ```
 
 You can then run `vendor/bin/php-cs-fixer fix` to fix the code.
