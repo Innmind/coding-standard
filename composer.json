@@ -19,17 +19,15 @@
     },
     "autoload": {
         "psr-4": {
-            "innmind\\coding-standard\\": "src/"
+            "Innmind\\CodingStandard\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\innmind\\coding-standard\\": "tests/"
+            "Tests\\Innmind\\CodingStandard\\": "tests/"
         }
     },
     "require-dev": {
-        "phpunit/phpunit": "~9.0",
-        "vimeo/psalm": "^3.7",
-        "innmind/black-box": "~4.10"
+        "vimeo/psalm": "~4.0"
     }
 }
