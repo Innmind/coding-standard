@@ -129,7 +129,7 @@ final class CodingStandard
             $finder = $finder->in($file);
         }
 
-        return Config::create()
+        return (new Config)
             ->setRules($rules ?? self::rules())
             ->setUsingCache(false)
             ->setRiskyAllowed(true)
