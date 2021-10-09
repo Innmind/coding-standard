@@ -15,8 +15,8 @@
         "issues": "http://github.com/innmind/coding-standard/issues"
     },
     "require": {
-        "php": "~7.4|~8.0",
-        "friendsofphp/php-cs-fixer": "^2.16"
+        "php": "~8.0",
+        "friendsofphp/php-cs-fixer": "~3.0"
     },
     "autoload": {
         "psr-4": {
