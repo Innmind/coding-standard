@@ -37,7 +37,7 @@ final class CodingStandard
                 'elseif' => false,
                 'final_public_method_for_abstract_class' => true,
                 'fully_qualified_strict_types' => true,
-                'function_declaration' => ['closure_function_spacing' => 'none'],
+                'function_declaration' => ['closure_function_spacing' => 'none', 'closure_fn_spacing' => 'none'],
                 'function_typehint_space' => true,
                 'global_namespace_import' => [
                     'import_classes' => false,
