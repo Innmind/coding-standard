@@ -11,6 +11,11 @@ use PhpCsFixer\{
 
 final class CodingStandard
 {
+    /**
+     * @param array<string, array<string, mixed>|bool> $override
+     *
+     * @return array<string, array<string, mixed>|bool>
+     */
     public static function rules(array $override = []): array
     {
         return \array_merge(
@@ -37,7 +42,7 @@ final class CodingStandard
                 'elseif' => false,
                 'final_public_method_for_abstract_class' => true,
                 'fully_qualified_strict_types' => true,
-                'function_declaration' => ['closure_function_spacing' => 'none'],
+                'function_declaration' => ['closure_function_spacing' => 'none', 'closure_fn_spacing' => 'none'],
                 'function_typehint_space' => true,
                 'global_namespace_import' => [
                     'import_classes' => false,
@@ -117,6 +122,7 @@ final class CodingStandard
 
     /**
      * @param list<string> $files
+     * @param ?array<string, array<string, mixed>|bool> $rules
      */
     public static function config(array $files, array $rules = null): ConfigInterface
     {
