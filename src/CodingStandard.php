@@ -12,6 +12,8 @@ use PhpCsFixer\{
 final class CodingStandard
 {
     /**
+     * @param array<string, array<string, mixed>|bool> $override
+     *
      * @return array<string, array<string, mixed>|bool>
      */
     public static function rules(array $override = []): array
