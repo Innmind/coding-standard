@@ -11,6 +11,9 @@ use PhpCsFixer\{
 
 final class CodingStandard
 {
+    /**
+     * @return array<string, array<string, mixed>|bool>
+     */
     public static function rules(array $override = []): array
     {
         return \array_merge(
@@ -117,6 +120,7 @@ final class CodingStandard
 
     /**
      * @param list<string> $files
+     * @param ?array<string, array<string, mixed>|bool> $rules
      */
     public static function config(array $files, array $rules = null): ConfigInterface
     {
