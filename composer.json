@@ -23,11 +23,6 @@
             "Innmind\\CodingStandard\\": "src/"
         }
     },
-    "autoload-dev": {
-        "psr-4": {
-            "Tests\\Innmind\\CodingStandard\\": "tests/"
-        }
-    },
     "require-dev": {
         "vimeo/psalm": "~4.0"
     }
