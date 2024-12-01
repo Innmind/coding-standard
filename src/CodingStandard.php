@@ -7,6 +7,7 @@ use PhpCsFixer\{
     Finder,
     Config,
     ConfigInterface,
+    Runner\Parallel\ParallelConfigFactory,
 };
 
 final class CodingStandard
@@ -133,6 +134,7 @@ final class CodingStandard
         }
 
         return (new Config)
+            ->setParallelConfig(ParallelConfigFactory::detect())
             ->setRules($rules ?? self::rules())
             ->setUsingCache(false)
             ->setRiskyAllowed(true)

@@ -16,16 +16,11 @@
     },
     "require": {
         "php": "~8.0",
-        "friendsofphp/php-cs-fixer": "~3.13"
+        "friendsofphp/php-cs-fixer": "~3.57"
     },
     "autoload": {
         "psr-4": {
             "Innmind\\CodingStandard\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Tests\\Innmind\\CodingStandard\\": "tests/"
         }
     },
     "require-dev": {
