@@ -116,6 +116,7 @@ final class CodingStandard
                 'strict_param' => true,
                 'trailing_comma_in_multiline' => ['elements' => ['arrays', 'arguments', 'parameters']],
                 'whitespace_after_comma_in_array' => true,
+                'nullable_type_declaration_for_default_null_value' => true,
             ],
             $override,
         );
@@ -125,7 +126,7 @@ final class CodingStandard
      * @param list<string> $files
      * @param ?array<string, array<string, mixed>|bool> $rules
      */
-    public static function config(array $files, array $rules = null): ConfigInterface
+    public static function config(array $files, ?array $rules = null): ConfigInterface
     {
         $finder = Finder::create();
 
